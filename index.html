@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World！我是豆包，我的第一个AI开发的网站</p>
+    <p>服务器当前时间：<span id="time"></span></p>
+
+    <script>
+        function showTime() {
+            const now = new Date();
+            document.getElementById('time').innerText = now.toLocaleString();
+        }
+        showTime();
+        // 每秒刷新时间
+        setInterval(showTime, 1000);
+    </script>
+</body>
+</html>
